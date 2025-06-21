@@ -1,0 +1,130 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150vh;
+}
+
+.weather-container {
+  background: rgba(255 255 255 / 0.1);
+  padding: 2rem;
+  border-radius: 12px;
+  width: 800px;
+  height: auto;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.weather-form {
+  display: flex;
+  margin-bottom: 1.5rem;
+  gap: 0.5rem;
+}
+
+.weather-input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  background-color: #6b5b95;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.btn:hover {
+  background-color: #563d7c;
+}
+
+.weather-result h2 {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.weather-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.weather-main img {
+  width: 80px;
+  height: 80px;
+}
+
+.temp {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.condition {
+  font-style: italic;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.info {
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+.error {
+  color: #ff6b6b;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.forecast-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+
+.forecast-card {
+  background: rgba(255 255 255 / 0.15);
+  padding: 1rem;
+  border-radius: 12px;
+  width: 60px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  color: white;
+  font-size: 0.85rem;
+}
+
+.forecast-date {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.forecast-temp {
+  font-weight: 700;
+  margin: 0.25rem 0;
+}
+
+.forecast-condition {
+  font-style: italic;
+  text-transform: capitalize;
+  margin-top: 0.25rem;
+}
