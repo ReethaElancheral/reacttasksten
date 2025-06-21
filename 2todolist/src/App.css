@@ -1,0 +1,163 @@
+body.light {
+  background-color: #f0f4f8;
+  color: #222;
+}
+body.dark {
+  background-color: #1e1e2f;
+  color: #f5f5f5;
+}
+.app-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+.task-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+.task-form input,
+.task-form select,
+.task-form button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.task-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.todo-list {
+  margin-top: 1rem;
+  text-align: left;
+}
+.task {
+  background: #ffffff;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: background 0.3s;
+}
+.task.completed {
+  text-decoration: line-through;
+  background-color: #d4edda;
+}
+.priority.low {
+  color: green;
+}
+.priority.medium {
+  color: orange;
+}
+.priority.high {
+  color: red;
+}
+.filters {
+  margin: 1rem 0;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+.filters button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #e0e0e0;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.filters button:hover {
+  background: #d5d5d5;
+}
+.theme-toggle {
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.theme-toggle:hover {
+  background-color: #0056b3;
+}
+.btn {
+  margin-left: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn.done {
+  background-color: #28a745;
+  color: white;
+}
+.btn.delete {
+  background-color: #dc3545;
+  color: white;
+}
+.empty {
+  text-align: center;
+  color: gray;
+  font-style: italic;
+  margin-top: 2rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+
+.task-form button,
+.theme-toggle {
+  background-color: #007bff;
+  color: white;
+}
+.task-form button:hover,
+.theme-toggle:hover {
+  background-color: #0056b3;
+}
+
+
+.filters button {
+  background: #e0e0e0;
+}
+.filters button:hover {
+  background: #cfcfcf;
+}
+
+
+.btn.done {
+  background-color: #28a745;
+  color: white;
+}
+.btn.done:hover {
+  background-color: #1e7e34;
+}
+
+.btn.delete {
+  background-color: #dc3545;
+  color: white;
+}
+.btn.delete:hover {
+  background-color: #b02a37;
+}
+.task button + button {
+  margin-left: 0.5rem;
+}
